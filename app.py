@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 import requests
 import datetime as dt
+import joblib
+
 
 st.markdown("""# Taxi Fare Prediction""")
 
