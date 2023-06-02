@@ -10,10 +10,10 @@ st.markdown("""# Taxi Fare Prediction""")
 pickup_date = st.data_input('pickup_date', value= '2012/10/06')
 pickup_time = st.time_input('pickup_time', value = '10:00')
 #pickup_datetime = 
-pickup_longitude = st.number_input('pickup_longitude', value = 40,76)
-pickup_latitude = st.number_input('pickup_latitude', value =-73,98)
-dropoff_longitude = st.number_input('dropoff_longitude', value = 40,64)
-dropoff_latitude = st.number_input('dropoff_latitude', value = -73,78)
+pickup_longitude = st.number_input('pickup_longitude', value = 40.76)
+pickup_latitude = st.number_input('pickup_latitude', value =-73.98)
+dropoff_longitude = st.number_input('dropoff_longitude', value = 40.64)
+dropoff_latitude = st.number_input('dropoff_latitude', value = -73.78)
 passenger_count = st.number_input('passenger_count', value =1)
 
 
