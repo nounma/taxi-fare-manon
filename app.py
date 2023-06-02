@@ -33,8 +33,7 @@ passenger_count = st.number_input('passenger_count', value =1)
     #st.write(response.json()["fare"])
     #st.write(querystring)
     
-value_to_predict=[nb_past_orders, avg_basket, total_purchase_cost, avg_quantity, total_quantity, avg_nb_unique_products, total_nb_codes]
-
+value_to_predict=[pickup_datetime, pickup_longitude, pickup_latitude, dropoff_longitude, dropoff_latitude,passenger_count]
 
 if st.button('Predict'):
     calculator = joblib.load('model.joblib')
