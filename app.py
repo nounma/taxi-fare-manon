@@ -2,12 +2,13 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import requests
+import datetime as dt
 
 st.markdown("""# Taxi Fare Prediction""")
 
 #user input
-pickup_date = st.data_input('pickup_date', value= '2012/10/06')
-pickup_time = st.time_input('pickup_time', value = '10:00')
+pickup_date = st.data_input('pickup_date', value= dt.date(2012, 10, 6))
+#pickup_time = st.time_input('pickup_time', value = '10:00')
 #pickup_datetime = 
 pickup_longitude = st.number_input('pickup_longitude', value = 40.76)
 pickup_latitude = st.number_input('pickup_latitude', value =-73.98)
